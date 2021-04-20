@@ -1,0 +1,88 @@
+.input-group-rounded .input-group-field {
+    border-radius: 5000px 0 0 5000px;
+    padding-left: 1rem;
+  }
+  
+  .input-group-rounded .input-group-button .button {
+    border-radius: 0 5000px 5000px 0;
+    font-size: 0.8rem;
+  }
+
+header{
+  background-color: yellow;
+}
+
+.title {
+  text-align: center;
+  bottom: 150px;
+  position: relative;
+}
+
+.logo{
+  position: relative;
+  top: 30px;
+  left: 50px;
+  border-radius: 10px;
+}
+
+.input-group-rounded{
+  width: 1000px;
+  padding-left: 450px;
+  bottom: 650px;
+  position: absolute;
+}
+
+.localTime{
+  position: absolute;
+  align-items: right;
+  left: 1100px;
+  bottom: 650px;
+}
+
+.fed {
+  background-color: red;
+  display:inline-block;
+  text-align: center;
+  padding-bottom: 540px;
+  padding-right: 35px;
+  padding-left: 50px;
+  bottom: 50px;
+  position: relative;
+}
+  
+.exchange {
+  background-color: red;
+  display: inline-block;
+  padding-bottom: 500px;
+  padding-left: 50px;
+  padding-top: 96px;
+  padding-right: 480px;
+  align-items: center;
+  bottom: 10px;
+  position: relative;
+  }
+
+.boj {
+  background-color: red;
+  display: inline-block;
+  padding-bottom: 622px;
+  padding-left: 50px;
+  padding-right: 35px;
+  padding-top: 38px;
+  position: absolute;
+  left: 1090px;
+  top: 233px;
+  bottom: 60px;  
+}
+
+.exchangeTitle{
+  left: 240px;
+  bottom: 70px;
+  position: relative;
+}
+
+.bojTitle{
+  left: 10px;
+  bottom: 40px;
+  position: relative;
+}
