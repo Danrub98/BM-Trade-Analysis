@@ -9,7 +9,16 @@
   }
 
 header{
-  background-color: yellow;
+  background-color: #1e2022;
+}
+
+body{
+  background-color: #f0f5f9;
+}
+
+footer{
+  background-color: #1e2022;
+
 }
 
 .title {
@@ -40,30 +49,32 @@ header{
 }
 
 .test {
-  background-color: green;
+  background-color: #c9d6df;
   display:block;
   text-align: center;
-  
+  border-radius: 20px;
   padding-right: 35px;
   padding-left: 50px;
-  
-  
 }
   
 .exchange {
-  background-color: red;
+  background-color: #c9d6df;
   display: inline-block;
-  
   align-items: center;
-  bottom: 10px;
-  
+  margin-top: 50px;
+  margin-left: 130px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  text-align: center;
   }
 
 
 
 .boj {
-  background-color: blue;
+  background-color: #c9d6df;
   display: inline-block;
-  
-   
+  margin-top: 50px;
+  margin-left: 150px;
+  border-radius: 20px;
+  text-align: center;
 }
