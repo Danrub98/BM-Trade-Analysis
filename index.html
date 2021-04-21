@@ -1,43 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Compressed CSS -->
-    <link rel="stylesheet" href="./assets/CSS/reset.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/CSS/style.css" >
-    <title>BM Trade Analysis</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compressed CSS -->
+  <link rel="stylesheet" href="./assets/CSS/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/CSS/style.css">
+  <title>BM Trade Analysis</title>
 
 </head>
 
 <header>
-    <img class = "logo" src="./assets/peso.jpg" rel="logo">
-    <h1 class="title">USD/MXN Trade Analysis</h1>
-    <div class="input-group input-group-rounded">
-        <input class="input-group-field" type="search">
-        <div class="input-group-button">
-          <input type="submit" class="button secondary" value="Search">
-        </div>
-      </div>
-    <h2 class="localTime">Local Time: </h2>
+  <img class="logo" src="./assets/peso.jpg" rel="logo">
+  <h1 class="title">USD/MXN Trade Analysis</h1>
+  <div class="input-group input-group-rounded">
+    <input class="input-group-field" type="search">
+    <div class="input-group-button">
+      <input type="submit" class="button secondary" value="Search">
+    </div>
+  </div>
+  <h2 class="localTime">Local Time: </h2>
 </header>
-<body>
-    <section class="fed">
-        <h2>Federal Reserve <br> (FED) News</h2>
 
+<body>
+  <main>
+    <section class="test">
+      <h2>USD/MXN Live Exchange Rate</h2>
+      <article class="exchangeRate">
+        <iframe src="https://www.widgets.investing.com/live-currency-cross-rates?theme=darkTheme&pairs=39" width="100%"
+          height="100%" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
+        <div class="poweredBy" style="font-family: Arial, Helvetica, sans-serif;">Powered by <a
+            href="https://www.investing.com?utm_source=WMT&amp;utm_medium=referral&amp;utm_campaign=LIVE_CURRENCY_X_RATES&amp;utm_content=Footer%20Link"
+            target="_blank" rel="nofollow">Investing.com</a></div>
+      </article>
     </section>
 
     <section class="exchange">
-        <h2 class="exchangeTitle">Exchange </h2>
+      <section class="fed">
+        <h2>Live Chart</h2>
+        <article class="calendar">
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a
+                href="https://es.tradingview.com/markets/currencies/economic-calendar/" rel="noopener"
+                target="_blank"><span class="blue-text">Calendario económico</span></a> por TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js"
+              async>
+                {
+                  "colorTheme"; "light",
+                    "isTransparent"; true,
+                      "width"; "100%",
+                        "height"; "100%",
+                          "locale"; "es",
+                            "importanceFilter"; "0,1",
+                              "currencyFilter"; "MXN,USD"
+                }
+              </script>
+          </div>
+          <!-- TradingView Widget END -->
+        </article>
+      </section>
     </section>
 
     <section class="boj">
-        <h2 class="bojTitle">Bank of Mexico (BOJ) News</h2>
-
+      <h2 class="news">Important News</h2>
+      <article class="calendar">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a
+              href="https://es.tradingview.com/markets/currencies/economic-calendar/" rel="noopener"
+              target="_blank"><span class="blue-text">Calendario económico</span></a> por TradingView</div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js"
+            async>
+              {
+                "colorTheme"; "light",
+                  "isTransparent"; true,
+                    "width"; "100%",
+                      "height"; "100%",
+                        "locale"; "es",
+                          "importanceFilter"; "0,1",
+                            "currencyFilter"; "MXN,USD"
+              }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+      </article>
     </section>
-
+  </main>
+  <footer>
     <div class="contact-panel" id="contact-panel" data-toggler=".is-active">
       <a class="contact-panel-button" data-toggle="contact-panel">Contact us</a>
       <form action="">
@@ -62,12 +118,15 @@
         </div>
       </form>
     </div>
-    
-    
-    
 
-<!-- Compressed JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+  </footer>
 
+
+
+  <!-- Compressed JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+  <script src="./assets/script.js"></script>
 </body>
+
 </html>
