@@ -39,50 +39,31 @@ header{
   bottom: 650px;
 }
 
-.fed {
-  background-color: red;
-  display:inline-block;
+.test {
+  background-color: green;
+  display:block;
   text-align: center;
-  padding-bottom: 540px;
+  
   padding-right: 35px;
   padding-left: 50px;
-  bottom: 50px;
-  position: relative;
+  
+  
 }
   
 .exchange {
   background-color: red;
   display: inline-block;
-  padding-bottom: 500px;
-  padding-left: 50px;
-  padding-top: 96px;
-  padding-right: 480px;
+  
   align-items: center;
   bottom: 10px;
-  position: relative;
+  
   }
 
+
+
 .boj {
-  background-color: red;
+  background-color: blue;
   display: inline-block;
-  padding-bottom: 622px;
-  padding-left: 50px;
-  padding-right: 35px;
-  padding-top: 38px;
-  position: absolute;
-  left: 1090px;
-  top: 233px;
-  bottom: 60px;  
-}
-
-.exchangeTitle{
-  left: 240px;
-  bottom: 70px;
-  position: relative;
-}
-
-.bojTitle{
-  left: 10px;
-  bottom: 40px;
-  position: relative;
+  
+   
 }
