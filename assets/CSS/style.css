@@ -1,80 +1,77 @@
 .input-group-rounded .input-group-field {
-    border-radius: 5000px 0 0 5000px;
-    padding-left: 1rem;
-  }
-  
-  .input-group-rounded .input-group-button .button {
-    border-radius: 0 5000px 5000px 0;
-    font-size: 0.8rem;
-  }
+  border-radius: 5000px 0 0 5000px;
+  padding-left: 1rem;
+}
+
+.input-group-rounded .input-group-button .button {
+  border-radius: 0 5000px 5000px 0;
+  font-size: 0.8rem;
+}
 
 header{
-  background-color: #1e2022;
+background-color: #1E2022;
+position: relative;
 }
 
 body{
-  background-color: #f0f5f9;
+background-color: #F0F5F9;
 }
 
 footer{
-  background-color: #1e2022;
-
+background-color: #1E2022;
 }
 
 .title {
-  text-align: center;
-  bottom: 150px;
-  position: relative;
+text-align: center;
+bottom: 150px;
+position: relative;
 }
 
 .logo{
-  position: relative;
-  top: 30px;
-  left: 50px;
-  border-radius: 10px;
+position: relative;
+top: 30px;
+left: 50px;
+border-radius: 10px;
 }
 
 .input-group-rounded{
-  width: 1000px;
-  padding-left: 450px;
-  bottom: 650px;
-  position: absolute;
+width: 1000px;
+padding-left: 450px;
+position: relative;
+bottom: 100px;
 }
 
 .localTime{
-  position: absolute;
-  align-items: right;
-  left: 1100px;
-  bottom: 650px;
+position: absolute;
+left: 1100px;
+bottom: 100px;
 }
 
 .test {
-  background-color: #c9d6df;
-  display:block;
-  text-align: center;
-  border-radius: 20px;
-  padding-right: 35px;
-  padding-left: 50px;
+background-color: #C9D6DF;
+display:block;
+text-align: center;
+border-radius: 20px;
+padding-right: 35px;
+padding-left: 50px;
 }
-  
+
 .exchange {
-  background-color: #c9d6df;
-  display: inline-block;
-  align-items: center;
-  margin-top: 50px;
-  margin-left: 130px;
-  margin-bottom: 50px;
-  border-radius: 20px;
-  text-align: center;
-  }
-
-
+background-color: #C9D6DF;
+display: inline-block;
+align-items: center;
+margin-top: 50px;
+margin-left: 130px;
+margin-bottom: 50px;
+border-radius: 20px;
+text-align: center;
+}
 
 .boj {
-  background-color: #c9d6df;
-  display: inline-block;
-  margin-top: 50px;
-  margin-left: 150px;
-  border-radius: 20px;
-  text-align: center;
+background-color: #C9D6DF;
+display: inline-block;
+margin-top: 50px;
+margin-left: 150px;
+border-radius: 20px;
+text-align: center;
 }
