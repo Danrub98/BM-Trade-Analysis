@@ -10,10 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
     integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/CSS/style.css">
-  <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <title>BM Trade Analysis</title>
 
 </head>
@@ -21,10 +18,13 @@
 
 
 <body>
+
   <header>
+    <!--Navigation bar with search button-->
+
+    
     <img class="logo" src="./assets/peso.jpg" rel="logo">
-    <h1 class="title">USD/MXN Trade Analysis <br> <span class="localTime" id="localTime">Local Time: </span></h1> 
-  
+    <h1 class="title">USD/MXN Trade Analysis <br> <span class="localTime" id="localTime">Local Time: </span></h1>
   </header>
   <main>
     <section class="test">
@@ -48,25 +48,33 @@
         </thead>
         <tbody>
         </tbody>
-          <tr>
-            <td>
-              <div class= "tableline" class="flex-container align-justify align-top">
-                <div class="flex-child-grow">
-                  <h6 id="table1" class="dashboard-table-text">USD/MXN</h6>
-                </div>
+        <tr>
+          <td>
+            <div class="tableline" class="flex-container align-justify align-top">
+              <div class="flex-child-grow">
+                <h6 id="table1" class="dashboard-table-text">USD/MXN</h6>
               </div>
-            </td class="tableLine">
-            <td id="table2"></td>
-            <td id="table3" class="bold"></td>
-            <td id="table4"></td>
-            </tr>
-          </tbody>
+            </div>
+          </td class="tableLine">
+          <td id="table2"></td>
+          <td id="table3" class="bold"></td>
+          <td id="table4"></td>
+        </tr>
+        </tbody>
       </table>
     </section>
 
     <section class="exchange">
       <section class="fed">
         <h2>Historical Exchange Rate</h2>
+        <!-- DATE SUBMITION FORM -->
+        <div class="input-group date" data-provide="datepicker">
+          <input type="text" class="form-control" id="date-input">
+          <div class="input-group-addon">
+              <span class="glyphicon glyphicon-th"></span>
+          </div>
+          <input type="submit" value="Submit" id="submit-date"></input>
+      </div>
         <table class="chart" id="mxnusd">
           <tr>
             <th class="historicalTable">Date</th>
@@ -74,7 +82,7 @@
             <th>Closing price</th>
             <th>Highest price</th>
             <th>Lowest price</th>
-         </tr>
+          </tr>
         </table>
       </section>
     </section>
@@ -109,31 +117,32 @@
 
   <article class="dailyChart">
     <h1>Daily Chart</h1>
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div id="tradingview_cd6e5"></div>
-  <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/symbols/USDMXN/?exchange=FX" rel="noopener" target="_blank"><span class="blue-text">USDMXN Gráfico</span></a> por TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script type="text/javascript">
-  new TradingView.widget(
-  {
-  "width": 980,
-  "height": 610,
-  "symbol": "FX:USDMXN",
-  "interval": "D",
-  "timezone": "Etc/UTC",
-  "theme": "light",
-  "style": "1",
-  "locale": "es",
-  "toolbar_bg": "#F1F3F6",
-  "enable_publishing": false,
-  "allow_symbol_change": true,
-  "container_id": "tradingview_cd6e5"
-}
-  );
-  </script>
-</div>
-<!-- TradingView Widget END -->
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div id="tradingview_cd6e5"></div>
+      <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/symbols/USDMXN/?exchange=FX"
+          rel="noopener" target="_blank"><span class="blue-text">USDMXN Gráfico</span></a> por TradingView</div>
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script type="text/javascript">
+        new TradingView.widget(
+          {
+            "width": 980,
+            "height": 610,
+            "symbol": "FX:USDMXN",
+            "interval": "D",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "es",
+            "toolbar_bg": "#F1F3F6",
+            "enable_publishing": false,
+            "allow_symbol_change": true,
+            "container_id": "tradingview_cd6e5"
+          }
+        );
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
 
   </article>
   <footer>
