@@ -121,6 +121,10 @@ h1{
   text-align: center;
 }
 
+h3 {
+  font-size: medium;
+}
+
 @media screen and (max-width: 768px) {
   .logo {
     display: inline-block;
