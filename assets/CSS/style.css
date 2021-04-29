@@ -61,10 +61,10 @@ padding-bottom: 40px;
 
 .exchange {
 background-color: #C9D6DF;
-display: inline-block;
+display: inline-table;
 align-items: center;
 margin-top: 50px;
-margin-left: 130px;
+margin-left: 15%;
 margin-bottom: 50px;
 border-radius: 20px;
 text-align: center;
@@ -72,8 +72,7 @@ text-align: center;
 
 .boj {
 background-color: #C9D6DF;
-display:inline-table;
-margin-top: 25px;
+display: inline-table;
 margin-bottom: 50px;
 margin-left: 150px;
 border-radius: 20px;
@@ -113,7 +112,7 @@ table th {
 .dailyChart{
   background-color: #C9D6DF;
   display: inline-block;
-  margin-left: 15%;
+  margin-left: 20%;
   border-radius: 20px;
   margin-bottom: 50px;
 }
