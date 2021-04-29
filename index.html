@@ -22,9 +22,11 @@
   <header>
     <!--Navigation bar with search button-->
     <img class="logo" src="./assets/peso.jpg" rel="logo">
-    <h1 class="title">USD/MXN Trade Analysis <br> <span class="localTime" id="localTime">Local Time: </span></h1>
+     <h1 class="title">USD/MXN Trade Analysis</h1> 
+    <h1 class="localTime" id="localTime">Local Time: </h1>
   </header>
   <main>
+    <div id="container">
     <section class="test">
       <h2>USD/MXN Live Exchange Rate</h2>
       <table class="dashboard-table" id="tableExhange">
@@ -115,7 +117,7 @@
   </main>
 
 
-  <article class="dailyChart">
+  <div class="dailyChart">
     <h1>Daily Chart</h1>
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container">
@@ -126,8 +128,7 @@
       <script type="text/javascript">
         new TradingView.widget(
           {
-            "width": 980,
-            "height": 610,
+            "autosize": true,
             "symbol": "FX:USDMXN",
             "interval": "D",
             "timezone": "Etc/UTC",
@@ -144,7 +145,8 @@
     </div>
     <!-- TradingView Widget END -->
 
-  </article>
+  </div>
+</div>
   <footer>
     <div class="contact-panel" id="contact-panel" data-toggler=".is-active">
       <a class="contact-panel-button" data-toggle="contact-panel">Contact us</a>
